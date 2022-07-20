@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #outer
+            {
+                height: 1200px;
+                width: 1200px;
+              border:5px solid black; 
+                
+            }
+            .r
+            {
+                height: 450px;
+                width: 1200px;
+                background-color:gray;
+            }
+            #a
+            {
+                height: 450px;
+                width: 450px;
+                background: blue;
+                float: left;
+            }
+            .a1
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            .a2
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            .a3
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            .a4
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            #b
+            {
+                height: 450px;
+                width: 300px;
+                background-color:black;
+                float:left;
+            }
+            .b1
+            {
+                height: 448px;
+                width: 98px;
+                background-color:aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .b11
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b12
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b13
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b14
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b15
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b16
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            .b2
+            {
+                height: 448px;
+                width: 98px;
+                background-color:aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .b21
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b22
+            {
+                height: 72.666px;
+                width: 96px;
+                background-color: green;
+                border: 1px solid black;
+                float: left;
+            }
+            .b23
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: green;
+                border: 1px solid black;
+                float: left;
+            }
+            .b24
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: green;
+                border: 1px solid black;
+                float: left;
+            }
+            .b25
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: green;
+                border: 1px solid black;
+                float: left;
+            }
+            .b26
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: green;
+                border: 1px solid black;
+                float: left;
+            }
+
+            .b3
+            {
+                height: 448px;
+                width: 98px;
+                background-color:aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .b31
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b32
+            {
+                height: 72.666px;
+                width: 96px;
+                background-color: green;
+                border: 1px solid black;
+                float: left;
+            }
+            .b33
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b34
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b35
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .b36
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            #c
+            {
+                height: 450px;
+                width: 450px;
+                background: green;
+                float:left;
+            }
+            .c1
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            .c2
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            .c3
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+            .c4
+            {
+                height: 100px;
+                width: 100px;
+                background: white;
+                margin: 60px;
+                float: left;
+            }
+
+            #d
+            {
+                height: 300px;
+                width: 450px;
+                background-color:black;
+                float: left;
+            }
+            .d1
+            {
+                height: 98px;
+                width: 448px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .d11
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d12
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            .d13
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d14
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d15
+            {
+                height: 96px;
+                width:72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d16
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            .d2
+            {
+                height: 98px;
+                width: 448px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .d21
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d22
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            .d23
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            .d24
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            .d25
+            {
+                height: 96px;
+                width:72.66px;
+                background-color: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            .d26
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: blue;
+                border: 1px solid black;
+                float: left;
+            }
+            .d3
+            {
+                height: 98px;
+                width: 448px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .d31
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d32
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d33
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d34
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d35
+            {
+                height: 96px;
+                width:72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .d36
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            #e
+            {
+                height: 300px;
+                width: 300px;
+                background: pink;
+                float:left;
+            }
+            #f
+            {
+                height: 300px;
+                width: 450px;
+                background: black;
+                float:left;
+            }
+            .f1
+            {
+                height: 98px;
+                width: 448px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .f11
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f12
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f13
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f14
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f15
+            {
+                height: 96px;
+                width:72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f16
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            .f2
+            {
+                height: 98px;
+                width: 448px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .f21
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            .f22
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            .f23
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            .f24
+            {
+                height: 96px;
+                width: 72.66px;
+                background-color: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            .f25
+            {
+                height: 96px;
+                width:72.66px;
+                background-color: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            .f26
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }    
+
+            .f3
+            {
+                height: 98px;
+                width: 448px;
+                background:aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .f31
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f32
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f33
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f34
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+            .f35
+            {
+                height: 96px;
+                width:72.66px;
+                background-color: yellow;
+                border: 1px solid black;
+                float: left;
+            }
+            .f36
+            {
+                height: 96px;
+                width: 72.66px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            #g
+            {
+                height: 450px;
+                width: 450px;
+                background: red;
+                float: left;
+            }
+            .h
+            {
+                height: 450px;
+                width: 300px;
+                background: black;
+                float:left;
+            }
+            .h1
+            {
+                height: 448px;
+                width: 98px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .h11
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h12
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h13
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h14
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h15
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: red;
+                border: 1px solid black;
+                float: left;
+            }
+            .h16
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            .h2
+            {
+                height: 448px;
+                width: 98px;
+                background:aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .h21
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: red;
+                border: 1px solid black;
+                float: left;
+            }
+            .h22
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: red;
+                border: 1px solid black;
+                float: left;
+            }
+            .h23
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: red;
+                border: 1px solid black;
+                float: left;
+            }
+            .h24
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: red;
+                border: 1px solid black;
+                float: left;
+            }
+            .h25
+            {
+                height: 72.66px;
+                width: 96px;
+                background-color: red;
+                border: 1px solid black;
+                float: left;
+            }
+            .h26
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            .h3
+            {
+                height: 448px;
+                width: 98px;
+                background: aquamarine;
+                border: 1px solid black;
+                float: left;
+            }
+            .h31
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h32
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h33
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h34
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h35
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+            .h36
+            {
+                height: 72.66px;
+                width: 96px;
+                border: 1px solid black;
+                float: left;
+            }
+
+            #i
+            {
+                height: 450px;
+                width: 450px;
+                background: yellow;
+                float:left;
+            }
+        </style>
+    </head>
+    <body>
+        <div  id="outer">
+            <div class="r">
+                <div id="a">
+                    <div class="a1"></div>
+                    <div class="a2"></div>
+                    <div class="a3"></div>
+                    <div class="a4"></div>
+                </div>
+                <div id="b">
+                    <div class="b1">
+                        <div class="b11"></div>
+                        <div class="b12"></div>
+                        <div class="b13"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="b14"></div>
+                        <div class="b15"></div>
+                        <div class="b16"></div>
+                    </div>
+                    <div class="b2">
+                        <div class="b21"></div>
+                        <div class="b22"></div>
+                        <div class="b23"></div>
+                        <div class="b24"></div>
+                        <div class="b25"></div>
+                        <div class="b26"></div>
+                    </div>
+                    <div class="b3">
+                        <div class="b31"></div>
+                        <div class="b32"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="b33"></div>
+                        <div class="b34"></div>
+                        <div class="b35"></div>
+                        <div class="b36"></div>
+                    </div>
+                </div>
+                <div id="c">
+                    <div class="c1"></div>
+                    <div class="c2"></div>
+                    <div class="c3"></div>
+                    <div class="c4"></div>
+                </div>
+                <div id="d">
+                    <div class="d1">
+                        <div class="d11"></div>
+                        <div class="d12"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="d13"></div>
+                        <div class="d14"></div>
+                        <div class="d15"></div>
+                        <div class="d16"></div>
+                    </div>
+                    <div class="d2">
+                        <div class="d21"></div>
+                        <div class="d22"></div>
+                        <div class="d23"></div>
+                        <div class="d24"></div>
+                        <div class="d25"></div>
+                        <div class="d26"></div>
+                    </div>
+                    <div class="d3">
+                        <div class="d31"></div>
+                        <div class="d32"></div>
+                        <div class="d33"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="d34"></div>
+                        <div class="d35"></div>
+                        <div class="d36"></div>
+                    </div>
+                </div>
+                <div id="e"><img src="image/2.png" style="height: 300px; width: 300px;"></div>
+                <div id="f">
+                    <div class="f1">
+                        <div class="f11"></div>
+                        <div class="f12"></div>
+                        <div class="f13"></div>
+                        <div class="f14"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="f15"></div>
+                        <div class="f16"></div>
+                    </div>
+                    <div class="f2">
+                        <div class="f21"></div>
+                        <div class="f22"></div>
+                        <div class="f23"></div>
+                        <div class="f24"></div>
+                        <div class="f25"></div>
+                        <div class="f26"></div>
+                    </div>
+                    <div class="f3">
+                        <div class="f31"></div>
+                        <div class="f32"></div>
+                        <div class="f33"></div>
+                        <div class="f34"></div>
+                        <div class="f35"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="f36"></div>
+                    </div>
+                </div>
+                <div id="g"></div>
+                <div id="h">
+                    <div class="h1">
+                        <div class="h11"></div>
+                        <div class="h12"></div>
+                        <div class="h13"></div>
+                        <div class="h14"></div>
+                        <div class="h15"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="h16"></div>
+                    </div>
+                    <div class="h2">
+                        <div class="h21"></div>
+                        <div class="h22"></div>
+                        <div class="h23"></div>
+                        <div class="h24"></div>
+                        <div class="h25"></div>
+                        <div class="h26"></div>
+                    </div>
+                    <div class="h3">
+                        <div class="h31"></div>
+                        <div class="h32"></div>
+                        <div class="h33"></div>
+                        <div class="h34"><img src="image/1.png" style="height: 70px; width: 80.66px;"></div>
+                        <div class="h35"></div>
+                        <div class="h36"></div>
+                    </div>
+                </div>
+                <div id="i"></div>
+            </div>
+        </div>
+    </body>
+</html>
